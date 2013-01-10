@@ -1,4 +1,4 @@
-vim_config
-==========
-
-It's just a vim distro I copied from the project I worked on TW.
+INSTALLATION
+============
+    $ git clone https://github.com/rafaelsales/vcf.git ~/.vim
+    $ ln -s ~/.vim/vimrc ~/.vimrc
