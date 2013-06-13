@@ -1,3 +1,6 @@
 [submodule "bundle/vimux-ruby-test"]
 	path = bundle/vimux-ruby-test
 	url = git://github.com/pgr0ss/vimux-ruby-test.git
+[submodule "bundle/vim-slim"]
+	path = bundle/vim-slim
+	url = git://github.com/slim-template/vim-slim.git
