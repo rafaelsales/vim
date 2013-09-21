@@ -26,8 +26,9 @@ set foldlevelstart=20
 set ignorecase
 set smartcase
 
-let g:AckAllFiles = 0
-let g:AckCmd = 'ack --type-add ruby=.feature --ignore-dir=tmp 2> /dev/null'
+" let g:AckAllFiles = 0
+" let g:AckCmd = 'ack --type-add ruby=.feature --ignore-dir=tmp 2> /dev/null'
+let g:agprg="ag --column"
 
 let html_use_css=1
 let html_number_lines=0
@@ -81,7 +82,7 @@ map <silent> <LocalLeader>gd :e product_diff.diff<CR>:%!git diff<CR>:setlocal bu
 map <silent> <LocalLeader>pd :e product_diff.diff<CR>:%!svn diff<CR>:setlocal buftype=nowrite<CR>
 map <silent> <LocalLeader>nh :nohls<CR>
 map <silent> <LocalLeader>yr :YRShow<CR>
-map <LocalLeader>aw :Ack '<C-R><C-W>'
+map <LocalLeader>aw :Ag '<C-R><C-W>'
 map <silent> <LocalLeader>bd :bufdo :bd<CR>
 map <silent> <LocalLeader>cc :TComment<CR>
 map <silent> <LocalLeader>uc :TComment<CR>

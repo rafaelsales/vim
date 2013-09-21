@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/sales/.vim'
 let g:netrw_dirhist_2='/media/dados/ws/promr-web'
+let g:netrw_dirhist_3='/media/dados/sb/nywt'
+let g:netrw_dirhist_4='/home/sales/Desktop/testcode/Digital-Inspection-master'
+let g:netrw_dirhist_5='/media/dados/sb/nywt'
+let g:netrw_dirhist_6='/media/dados/ws/real-time-rails/app'
+let g:netrw_dirhist_7='/media/dados/ws/real-time-rails'
+let g:netrw_dirhist_8='/media/dados/sb/nywt'
