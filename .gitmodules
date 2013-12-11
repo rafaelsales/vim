@@ -28,3 +28,6 @@
 [submodule "bundle/vim-vroom"]
 	path = bundle/vim-vroom
 	url = https://github.com/skalnik/vim-vroom
+[submodule "bundle/vimux"]
+	path = bundle/vimux
+	url = https://github.com/benmills/vimux
