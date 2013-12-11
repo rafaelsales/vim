@@ -51,6 +51,9 @@ let g:no_html_toolbar = 'yes'
 
 let coffee_no_trailing_space_error = 1
 
+" vim-vroom - Run tests
+let g:vroom_use_vimux = 1
+
 autocmd FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
@@ -170,4 +173,4 @@ let g:ctrlp_max_height = 20
 let g:ctrlp_clear_cache_on_exit = 0
 
 " Auto-compile .coffeescript after save:
-autocmd BufWritePost *.coffee silent CoffeeCompile -b | cwindow
+" autocmd BufWritePost *.coffee silent CoffeeCompile -b | cwindow
