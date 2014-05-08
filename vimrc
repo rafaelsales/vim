@@ -51,6 +51,10 @@ let g:no_html_toolbar = 'yes'
 
 let coffee_no_trailing_space_error = 1
 
+" Vimux overrides
+let g:VimuxOrientation = "h"
+let g:VimuxHeight = "40"
+
 " vim-vroom - Run tests
 let g:vroom_use_vimux = 1
 
@@ -113,7 +117,8 @@ if version >= 700
     autocmd FileType tex setlocal spell spelllang=en_us
 endif
 
-colorscheme slate
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " Highlight trailing whitespace
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
