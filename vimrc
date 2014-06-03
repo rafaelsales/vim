@@ -26,6 +26,10 @@ set foldlevelstart=20
 set ignorecase
 set smartcase
 
+" Mouse handling (even when tmux mouse scroll is active)
+set mouse=a
+set ttymouse=xterm
+
 " let g:AckAllFiles = 0
 " let g:AckCmd = 'ack --type-add ruby=.feature --ignore-dir=tmp 2> /dev/null'
 let g:agprg="ag --column"
