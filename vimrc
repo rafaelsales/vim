@@ -183,3 +183,5 @@ let g:ctrlp_clear_cache_on_exit = 0
 
 " Auto-compile .coffeescript after save:
 " autocmd BufWritePost *.coffee silent CoffeeCompile -b | cwindow
+
+runtime macros/matchit.vim
