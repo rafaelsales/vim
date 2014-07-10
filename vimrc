@@ -56,7 +56,7 @@ let g:no_html_toolbar = 'yes'
 let coffee_no_trailing_space_error = 1
 
 " Vimux overrides
-let g:VimuxOrientation = "h"
+let g:VimuxOrientation = "v"
 let g:VimuxHeight = "40"
 
 " vim-vroom - Run tests
