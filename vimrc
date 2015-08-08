@@ -105,6 +105,7 @@ nnoremap <silent> <LocalLeader>[ :tabp<CR>
 nnoremap <silent> <LocalLeader>] :tabn<CR>
 nnoremap <silent> <LocalLeader><Space> :noh<CR>
 nnoremap <silent> <LocalLeader>ww :%s/\s\+$//<CR>:let @/=''<CR><C-o>
+nnoremap <silent> <LocalLeader>xx :!rm /tmp/*.sw{o,p}<CR>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 inoremap <F1> <ESC>
@@ -180,6 +181,11 @@ let g:ctrlp_max_files = 0
 let g:ctrlp_switch_buffer = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_clear_cache_on_exit = 0
+
+" ctrlp-rails settings
+" nnoremap <leader>pv :CtrlPViews<CR>
+" nnoremap <leader>pm :CtrlPModels<CR>
+" nnoremap <leader>pc :CtrlPControllers<CR>
 
 " Auto-compile .coffeescript after save:
 " autocmd BufWritePost *.coffee silent CoffeeCompile -b | cwindow
