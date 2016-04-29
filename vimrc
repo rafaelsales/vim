@@ -182,6 +182,9 @@ let g:ctrlp_switch_buffer = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_clear_cache_on_exit = 0
 
+" syntastic
+let g:syntastic_javascript_checkers = ['eslint']
+
 " ctrlp-rails settings
 " nnoremap <leader>pv :CtrlPViews<CR>
 " nnoremap <leader>pm :CtrlPModels<CR>
