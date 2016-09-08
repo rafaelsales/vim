@@ -64,3 +64,9 @@
 [submodule "syntastic"]
 	path = syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/seoul"]
+	path = bundle/seoul
+	url = https://github.com/junegunn/seoul256.vim
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

@@ -122,7 +122,12 @@ if version >= 700
     autocmd FileType tex setlocal spell spelllang=en_us
 endif
 
+" solarized options
+set background=dark
+let g:solarized_termtrans=1
 let g:solarized_termcolors=256
+let g:solarized_visibility="high"
+let g:solarized_contrast="high"
 colorscheme solarized
 
 " Highlight trailing whitespace
