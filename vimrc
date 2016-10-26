@@ -32,7 +32,7 @@ set ttymouse=xterm
 
 " let g:AckAllFiles = 0
 " let g:AckCmd = 'ack --type-add ruby=.feature --ignore-dir=tmp 2> /dev/null'
-let g:agprg="ag --column --ignore '*.log' --ignore 'tags'"
+let g:agprg="ag --column --ignore '*.log' --ignore tmp --ignore tags --ignore node_modules --ignore bower_components --ignore dist"
 
 let html_use_css=1
 let html_number_lines=0
@@ -47,7 +47,7 @@ let g:gist_detect_filetype = 1
 
 let g:rubycomplete_buffer_loading = 1
 
-let g:fuzzy_ignore = "*.log,tmp/*,db/sphinx/*,data"
+let g:fuzzy_ignore = "*.log,tmp/*,db/sphinx/*,data,**/node_modules"
 let g:fuzzy_ceiling = 50000
 let g:fuzzy_matching_limit = 10
 
@@ -56,7 +56,9 @@ let g:no_html_toolbar = 'yes'
 let coffee_no_trailing_space_error = 1
 
 " Vimux overrides
-let g:VimuxOrientation = "v"
+" let g:VimuxOrientation = "v"
+" let g:VimuxHeight = "40"
+let g:VimuxOrientation = "h"
 let g:VimuxHeight = "40"
 
 " vim-vroom - Run tests
@@ -81,7 +83,7 @@ endfunction
 autocmd FileType ruby runtime ruby_mappings.vim
 imap <C-L> <SPACE>=><SPACE>
 map <silent> <LocalLeader>cj :!clj %<CR>
-map <silent> <LocalLeader>rt :!/usr/local/bin/ctags -R --exclude=".git\|.svn\|log\|tmp\|db\|pkg" --extra=+f<CR>
+map <silent> <LocalLeader>rt :!/usr/local/bin/ctags -R --exclude=.git --exclude=.svn --exclude=log --exclude=tmp --exclude=db  --exclude=pkg --exclude=diser_submits_inquiry_via_property_teaser_spec.rbtmp --exclude=node_modules --exclude=bower_components --exclude=vendor --exclude=app/assets --extra=+f<CR>
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 map <silent> <LocalLeader>nr :NERDTree<CR>
 map <silent> <LocalLeader>nf :NERDTreeFind<CR>
@@ -105,7 +107,6 @@ nnoremap <silent> <LocalLeader>[ :tabp<CR>
 nnoremap <silent> <LocalLeader>] :tabn<CR>
 nnoremap <silent> <LocalLeader><Space> :noh<CR>
 nnoremap <silent> <LocalLeader>ww :%s/\s\+$//<CR>:let @/=''<CR><C-o>
-nnoremap <silent> <LocalLeader>xx :!rm /tmp/*.sw{o,p}<CR>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 inoremap <F1> <ESC>
@@ -122,11 +123,7 @@ if version >= 700
     autocmd FileType tex setlocal spell spelllang=en_us
 endif
 
-" solarized options
-set background=dark
-let g:solarized_termtrans=1
 let g:solarized_termcolors=256
-let g:solarized_visibility="high"
 let g:solarized_contrast="high"
 colorscheme solarized
 
@@ -174,12 +171,14 @@ set undodir=~/.vim/undo
 set undofile
 set undolevels=1000 "maximum number of changes that can be undone
 set undoreload=10000 "maximum number lines to save for undo on a buffer reload
+set ttyfast
+set lazyredraw
 
 " ctrlp settings
 nnoremap <silent> <LocalLeader>pp :CtrlP<CR>
 let g:ctrlp_map = ''
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\.git$\|\.hg$\|\.svn$',
+    \ 'dir':  '\.git$\|\.hg$\|\.svn$\|/dist$\|/tmp$\|/node_modules$\|/bower_components$\|/vendor$',
     \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
     \ }
 let g:ctrlp_max_files = 0
@@ -187,15 +186,10 @@ let g:ctrlp_switch_buffer = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_clear_cache_on_exit = 0
 
-" syntastic
-let g:syntastic_javascript_checkers = ['eslint']
-
-" ctrlp-rails settings
-" nnoremap <leader>pv :CtrlPViews<CR>
-" nnoremap <leader>pm :CtrlPModels<CR>
-" nnoremap <leader>pc :CtrlPControllers<CR>
+ca Ag Ag!
 
 " Auto-compile .coffeescript after save:
 " autocmd BufWritePost *.coffee silent CoffeeCompile -b | cwindow
 
 runtime macros/matchit.vim
+autocmd filetype crontab setlocal nobackup nowritebackup
