@@ -25,6 +25,7 @@ set foldlevelstart=20
 
 set ignorecase
 set smartcase
+let g:jsx_ext_required = 0
 
 " Mouse handling (even when tmux mouse scroll is active)
 set mouse=a
@@ -59,7 +60,7 @@ let coffee_no_trailing_space_error = 1
 " let g:VimuxOrientation = "v"
 " let g:VimuxHeight = "40"
 let g:VimuxOrientation = "h"
-let g:VimuxHeight = "40"
+let g:VimuxHeight = "45"
 
 " vim-vroom - Run tests
 let g:vroom_use_vimux = 1
@@ -178,13 +179,17 @@ set lazyredraw
 nnoremap <silent> <LocalLeader>pp :CtrlP<CR>
 let g:ctrlp_map = ''
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\.git$\|\.hg$\|\.svn$\|/dist$\|/tmp$\|/node_modules$\|/bower_components$\|/vendor$',
+    \ 'dir':  '\.git$\|\.hg$\|\.svn$\|/dist$\|/tmp$\|/node_modules$\|/bower_components$\|/vendor$\|/doc/api$\|cassettes\|/public$',
     \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
     \ }
 let g:ctrlp_max_files = 0
 let g:ctrlp_switch_buffer = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_clear_cache_on_exit = 0
+
+" Because of macOS Sierra, :w !pbcopy stopped working in VIM 8.0
+" https://github.com/tmux/tmux/issues/543
+" set clipboard=unnamedplus
 
 ca Ag Ag!
 
