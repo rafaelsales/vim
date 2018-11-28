@@ -33,7 +33,7 @@ set ttymouse=xterm
 
 " let g:AckAllFiles = 0
 " let g:AckCmd = 'ack --type-add ruby=.feature --ignore-dir=tmp 2> /dev/null'
-let g:agprg="ag --column --ignore '*.log' --ignore tmp --ignore tags --ignore node_modules --ignore bower_components --ignore dist"
+let g:agprg="ag --column --ignore '*.log' --ignore '*.json' --ignore tmp --ignore tags --ignore node_modules --ignore bower_components --ignore dist --ignore doc"
 
 let html_use_css=1
 let html_number_lines=0
