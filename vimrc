@@ -33,7 +33,7 @@ set ttymouse=xterm
 
 " let g:AckAllFiles = 0
 " let g:AckCmd = 'ack --type-add ruby=.feature --ignore-dir=tmp 2> /dev/null'
-let g:agprg="ag --column --ignore '*.log' --ignore '*.json' --ignore tmp --ignore tags --ignore node_modules --ignore bower_components --ignore dist --ignore doc"
+let g:agprg="ag --column --ignore '*.log' --ignore '*.json' --ignore '*.tfstate*' --ignore tmp --ignore tags --ignore node_modules --ignore bower_components --ignore dist --ignore doc"
 
 let html_use_css=1
 let html_number_lines=0
@@ -112,6 +112,8 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 inoremap <F1> <ESC>
 inoremap jj <ESC>
+" Make alt + right-arrow work on iTerm2 + Vim (https://superuser.com/questions/635482/why-does-optionleft-arrow-work-in-vim-but-not-right-arrow-on-mac-os-x)
+imap <ESC>f <C-o>e
 
 " vimux commands
 map <Leader>vq :VimuxCloseRunner<CR>
@@ -180,7 +182,7 @@ nnoremap <silent> <LocalLeader>pp :CtrlP<CR>
 let g:ctrlp_map = ''
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\.git$\|\.hg$\|\.svn$\|/dist$\|/tmp$\|/node_modules$\|/bower_components$\|/vendor$\|/doc/api$\|cassettes\|/public$',
-    \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
+    \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\.tfstate\|\~$',
     \ }
 let g:ctrlp_max_files = 0
 let g:ctrlp_switch_buffer = 1
