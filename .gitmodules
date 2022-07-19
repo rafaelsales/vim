@@ -1,9 +1,9 @@
 [submodule "bundle/vimux-ruby-test"]
 	path = bundle/vimux-ruby-test
-	url = git://github.com/pgr0ss/vimux-ruby-test.git
+	url = git@github.com:pgr0ss/vimux-ruby-test.git
 [submodule "bundle/vim-slim"]
 	path = bundle/vim-slim
-	url = git://github.com/slim-template/vim-slim.git
+	url = git@github.com:slim-template/vim-slim.git
 [submodule "bundle/ctrlp.vim"]
 	path = bundle/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim.git
@@ -12,40 +12,40 @@
 	url = git@github.com:mileszs/ack.vim.git
 [submodule "bundle/ag.vim"]
 	path = bundle/ag.vim
-	url = https://github.com/rking/ag.vim
+	url = git@github.com:rking/ag.vim
 [submodule "bundle/vim-fireplace"]
 	path = bundle/vim-fireplace
-	url = git://github.com/tpope/vim-fireplace.git
+	url = git@github.com:tpope/vim-fireplace.git
 [submodule "bundle/vim-classpath"]
 	path = bundle/vim-classpath
-	url = git://github.com/tpope/vim-classpath.git
+	url = git@github.com:tpope/vim-classpath.git
 [submodule "bundle/bim-clojure-static"]
 	path = bundle/bim-clojure-static
-	url = git://github.com/guns/vim-clojure-static.git
+	url = git@github.com:guns/vim-clojure-static.git
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
 [submodule "bundle/vim-vroom"]
 	path = bundle/vim-vroom
-	url = https://github.com/skalnik/vim-vroom
+	url = git@github.com:skalnik/vim-vroom
 [submodule "bundle/vimux"]
 	path = bundle/vimux
-	url = https://github.com/benmills/vimux
+	url = git@github.com:benmills/vimux
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
-	url = https://github.com/kana/vim-textobj-user.git
+	url = git@github.com:kana/vim-textobj-user.git
 [submodule "bundle/vim-textobj-rubyblock"]
 	path = bundle/vim-textobj-rubyblock
-	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+	url = git@github.com:nelstrom/vim-textobj-rubyblock.git
 [submodule "bundle/matchit.zip"]
 	path = bundle/matchit.zip
-	url = https://github.com/vim-scripts/matchit.zip.git
+	url = git@github.com:vim-scripts/matchit.zip.git
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
@@ -60,28 +60,28 @@
 	url = git@github.com:iurifq/ctrlp-rails.vim.git
 [submodule "bundle/vim-jsx"]
 	path = bundle/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
+	url = git@github.com:mxw/vim-jsx.git
 [submodule "syntastic"]
 	path = syntastic
-	url = https://github.com/scrooloose/syntastic.git
+	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/seoul"]
 	path = bundle/seoul
-	url = https://github.com/junegunn/seoul256.vim
+	url = git@github.com:junegunn/seoul256.vim
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
+	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
-	url = https://github.com/elixir-lang/vim-elixir.git
+	url = git@github.com:elixir-lang/vim-elixir.git
 [submodule "bundle/vim-rhubarb"]
 	path = bundle/vim-rhubarb
-	url = https://github.com/tpope/vim-rhubarb.git
+	url = git@github.com:tpope/vim-rhubarb.git
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript
+	url = git@github.com:pangloss/vim-javascript
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
+	url = git@github.com:leafgarland/typescript-vim.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git@github.com:tpope/vim-rails.git
