@@ -189,6 +189,9 @@ let g:ctrlp_switch_buffer = 1
 let g:ctrlp_max_height = 20
 let g:ctrlp_clear_cache_on_exit = 0
 
+" nerdtree
+let NERDTreeShowHidden = 1
+
 " Because of macOS Sierra, :w !pbcopy stopped working in VIM 8.0
 " https://github.com/tmux/tmux/issues/543
 " set clipboard=unnamedplus
